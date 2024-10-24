@@ -1,0 +1,133 @@
+*{
+  --primary-color: #9dcb8d; /* Light green */
+  --secondary-color: #f5f5f5; /* Light gray */
+  --text-color: #333; /* Dark gray */
+  --accent-color: #f27171; /* Light red (highlight) */
+  --font-family: 'Arial', sans-serif;
+}
+
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+  font-family: var(--font-family);
+  line-height: 1.6;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--secondary-color);
+  border-bottom: 2px solid var(--accent-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  height: 80px;
+}
+
+.nav-link {
+  color: var(--primary-color);
+  padding: 15px 20px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--accent-color);
+}
+
+/* Search Form */
+.form-control {
+  background-color: #fff; /* White input background */
+  border-color: transparent; /* Remove default border */
+  border-radius: 5px;
+}
+
+
+.btn-outline-success {
+  color: var(--primary-color); /* Green button text */
+  border-color: var(--primary-color);
+  background-color: transparent; /* Transparent background */
+  transition: background-color 0.3s ease; /* Smooth background transition on hover */
+}
+
+.btn-outline-success:hover {
+  background-color: var(--accent-color); /* Light red background on hover */
+}
+
+/* Hero Image */
+.img-fluid {
+  width: 100%;
+  height: 45vh; /* Adjust image height */
+  object-fit: cover;
+}
+
+/* Product Section */
+.row {
+  margin: 2rem 0;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: transform 0.3s ease; /* Smooth hover animation */
+}
+
+.card:hover {
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.card-img-top {
+  height: 280px; /* Adjust product image height */
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+}
+
+.card-text {
+  color: #666; /* Slightly lighter gray text */
+  margin-bottom: 0.5rem;
+}
+
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .nav-link {
+    font-size: 14px;
+    margin-left: 1rem; /* Adjust spacing on smaller screens */
+  }
+}
+  .card {
+    margin-bottom: 1.5rem;
+  }
+
+/* Sustainability Badge */
+.sustainability-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Animations */
+.card-img-top {
+  transition: transform 0.3s ease;} /* Smooth zoom */

@@ -1,0 +1,115 @@
+*{
+    --cor-primaria: #7dcb5b; /* Verde claro */
+    --cor-secundaria: #f2f2f2; /* Bege claro */
+    --cor-texto: #333; /* Cinza escuro */
+    --font-family: 'Arial', sans-serif;
+  }
+  
+  /* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+  font-family: var(--font-family);
+  line-height: 1.6;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--secondary-color);
+  border-bottom: 2px solid var(--accent-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  height: 80px;
+}
+
+.nav-link {
+  color: var(--primary-color);
+  padding: 15px 20px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--accent-color);
+}
+
+/* Search Form */
+.form-control {
+  background-color: #fff; /* White input background */
+  border-color: transparent; /* Remove default border */
+  border-radius: 5px;
+}
+
+  
+  .btn-outline-success {
+    color: var(--cor-primaria); /* Cor do botão de pesquisa */
+    border-color: var(--cor-primaria);
+  }
+  
+  /* Imagem da Hero Section */
+  .img-fluid {
+    width: 100%; /* Imagem ocupa toda a largura */
+    height: 40vh; /* Ajuste a altura da imagem */
+    object-fit: cover; /* Recorta a imagem para caber no espaço */
+  }
+  
+  /* Seção de produtos */
+  .row {
+    margin: 2rem 0;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: 0.3s; /* Efeito de hover suave */
+  }
+  
+  .card:hover {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil no hover */
+  }
+  
+  .card-img-top {
+    height: 250px; /* Ajuste a altura da imagem do produto */
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-text {
+    color: #777;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Seção de contato */
+  .contact {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--cor-primaria);
+    color: white;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .nav-link {
+      font-size: 14px;
+    }
+  
+    .card {
+      margin-bottom: 1rem;
+    }
+  }
